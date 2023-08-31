@@ -85,7 +85,7 @@ function MovieCard({ movies }) {
                   <ListGroup.Item>Release On:-{movie.release_date}</ListGroup.Item>
                 </ListGroup>
                 </Card.Text>
-                {watchlist.find((item) => item.id === movie.id) ? (
+                {watchlist?.find((item) => item.id === movie.id) ? (
                   <Button variant="danger"  onClick={() => removeFromWatchlist(movie.id)}>
                     Remove from Watchlist
                   </Button>
